@@ -1,0 +1,6 @@
+framework module AYSwift {
+  umbrella header "AYSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
