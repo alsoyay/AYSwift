@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "AYSwift"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of AYSwift."
+  s.version          = "0.0.1"
+  s.summary          = "swift utilities and such."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+  swift utilities and such. in a cocoapod.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/AYSwift"
+  s.homepage         = "https://github.com/dpostigo"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Dani Postigo" => "dani@helloalfred.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AYSwift.git", :tag => s.version.to_s }
+  s.author           = { "Dani Postigo" => "dani.postigo@gmail.com" }
+  s.source           = { :git => "https://github.com/alsoyay/AYSwift.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
