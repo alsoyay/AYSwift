@@ -1,18 +1,17 @@
 PODS:
-  - AYSwift (0.1.0)
-  - FBSnapshotTestCase (1.8.1)
+  - AYSwift (0.0.1)
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
   - Nimble (0.4.2)
-  - Nimble-Snapshots (0.4.0):
-    - FBSnapshotTestCase (~> 1.7)
-    - Nimble (~> 0.4)
-    - Quick (~> 0.3)
   - Quick (0.3.1)
 
 DEPENDENCIES:
   - AYSwift (from `../`)
-  - FBSnapshotTestCase
+  - FBSnapshotTestCase (= 2.0.4)
   - Nimble
-  - Nimble-Snapshots
   - Quick (~> 0.3.1)
 
 EXTERNAL SOURCES:
@@ -20,10 +19,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AYSwift: 823385b72b2ea970090b539617e12511a21a4398
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+  AYSwift: 7a52e297a3e7ffb2385b8efb96b09b2d29c3b03b
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
   Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
-  Nimble-Snapshots: 216ae8c0ea3f4105be1606749fe15d8b2138af40
   Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
 
 COCOAPODS: 0.39.0.beta.4

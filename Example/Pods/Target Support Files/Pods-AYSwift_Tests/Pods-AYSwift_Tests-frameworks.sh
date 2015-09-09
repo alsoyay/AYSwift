@@ -85,13 +85,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AYSwift_Tests/AYSwift.framework"
   install_framework "Pods-AYSwift_Tests/FBSnapshotTestCase.framework"
   install_framework "Pods-AYSwift_Tests/Nimble.framework"
-  install_framework "Pods-AYSwift_Tests/Nimble_Snapshots.framework"
   install_framework "Pods-AYSwift_Tests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AYSwift_Tests/AYSwift.framework"
   install_framework "Pods-AYSwift_Tests/FBSnapshotTestCase.framework"
   install_framework "Pods-AYSwift_Tests/Nimble.framework"
-  install_framework "Pods-AYSwift_Tests/Nimble_Snapshots.framework"
   install_framework "Pods-AYSwift_Tests/Quick.framework"
 fi
