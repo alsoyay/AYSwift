@@ -10,9 +10,32 @@ public class AYSource: NSObject {
 
     public var items: [AnyObject]
 
+    public var count:Int {
+        return self.items.count
+    }
 
-    init(index: Int, items: [AnyObject] = []) {
+    public subscript(index: Int) -> AnyObject {
+        get {
+            return self.items[index]
+        }
+        set {
+            self.items[index] = newValue
+        }
+    }
+
+
+    public init(index: Int, items: [AnyObject] = []) {
         self.index = index
         self.items = items
+    }
+
+
+    public func move(item: AnyObject, destination: AYSource, index: Int) {
+        let array = (self.items as NSArray)
+        if array.containsObject(item) {
+            let index = array.indexOfObject(item)
+            self.items.removeAtIndex(index)
+            destination.items.insert(item, atIndex: index)
+        }
     }
 }
