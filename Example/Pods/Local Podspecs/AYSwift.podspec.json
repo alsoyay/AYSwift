@@ -1,16 +1,16 @@
 {
   "name": "AYSwift",
-  "version": "0.1.0",
-  "summary": "A short description of AYSwift.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/AYSwift",
+  "version": "0.0.1",
+  "summary": "swift utilities and such.",
+  "description": "swift utilities and such. in a cocoapod.",
+  "homepage": "https://github.com/dpostigo",
   "license": "MIT",
   "authors": {
-    "Dani Postigo": "dani@helloalfred.com"
+    "Dani Postigo": "dani.postigo@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/AYSwift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/alsoyay/AYSwift.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
