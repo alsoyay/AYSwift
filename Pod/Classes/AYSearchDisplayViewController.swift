@@ -5,6 +5,7 @@
 import Foundation
 
 
+
 protocol AYSearchDisplayDelegate {
     func searchDisplay(string:String, didFindResults results:[String])
     func searchDisplayDidEnd()
@@ -17,7 +18,7 @@ public class AYSearchDisplayViewController:UIViewController, UISearchBarDelegate
     var delegate: AYSearchDisplayDelegate?
     
     public var searchText:String {
-        return self.searchBar.text
+        return self.searchBar.text! // TODO: is this unwrapping correct?
     }
 
     override public func viewDidLoad() {
@@ -26,8 +27,8 @@ public class AYSearchDisplayViewController:UIViewController, UISearchBarDelegate
     
     
     public func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        if self.searchText > 1 {
-            let results = []
+        if self.searchText.characters.count > 1 {
+            let results:[String] = []
             delegate?.searchDisplay(self.searchText, didFindResults: results)
             
         } else {
@@ -39,7 +40,7 @@ public class AYSearchDisplayViewController:UIViewController, UISearchBarDelegate
 
 public class AYSearchResultsViewController:UITableViewController, AYSearchDisplayDelegate {
     
-    
+//    let sources:[AYSwift.AYSource] = []
     
     func searchDisplay(string:String, didFindResults results:[String]) {
         
